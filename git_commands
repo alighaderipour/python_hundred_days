@@ -6,7 +6,7 @@ git remote add origin https://github.com/ShahazLuffy/python_hundred_days.git
 git push origin master
 
 
-/////
+/////baraye push kardan 
 git add .
 git commit -am "your comment here"
 git push origin master
