@@ -58,7 +58,11 @@ for item in target_name:
     final_answer.append(item.lower())
     
 for item in range (num_tries):    
+    #guessed_alphabet = 'a' 
+    print(intial_answer)
     guessed_alphabet =input('guess an alphabet :')
+    
+    all_guessed.append(guessed_alphabet)
     if len(guessed_alphabet) > 2:
         print('please enter only one alphabet')
         lives -=1
@@ -71,23 +75,28 @@ for item in range (num_tries):
             break
         else:
             continue
-    else:     
+    else:    
+       
         if guessed_alphabet in target_name:
+             print(f'correct guess, you have {lives} lives, goodluck')
              for item in range(len(target_name)):
                  if guessed_alphabet == final_answer[item]:
                      intial_answer[item]= guessed_alphabet
-                     if '_' in final_answer and lives ==0 : 
+                     print(intial_answer)
+                     if '*' in final_answer and lives ==0 : 
                          print('you lost')
                          break
-                     if '_' in final_answer and lives >0 :
-                         print('one went')
+                     if '*' in final_answer and lives >0 :
+                         print('test')
                  else:
-                      lives-=1
-                      print(f'you have {lives} left')
-                      if lives == 0:
-                            print('you lost')
-                            break
-                      else:
-                          continue
+                      continue
+        else:
+             lives-=1
+             print(f'wrong guess, you have {lives} lives left')
+             if lives == 0:
+                 print('you lost')
+                 break
+             else:
+                continue
                      
 
