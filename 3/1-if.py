@@ -6,6 +6,7 @@ print(message)
 
 #simple if (basic)
 # If the number can be divided by 2 with 0 remainder.
+number=12
 if number % 2 == 0:
   print("This is an even number.")
 # Otherwise (number cannot be divided by 2 with 0 remainder).
