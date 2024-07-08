@@ -16,7 +16,7 @@ def drink_potion():
     print(potion_strength)
 
 drink_potion()
-print(potion_strength)
+#print(potion_strength)
 
 # Global Scope
 player_health = 10
@@ -46,11 +46,11 @@ def create_enemy():
 
 enemies = 1
 
-def increase_enemies():
+def increase_enemies2():
     print(f"enemies inside function: {enemies}")
     return enemies + 1
 
-enemies = increase_enemies()
+enemies = increase_enemies2()
 print(f"enemies outside function: {enemies}")
 
 #Global Constants
