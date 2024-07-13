@@ -15,8 +15,25 @@ content_list = [
     {"name": "LeBron James", "follower_count": "180", "description": "Basketball Player", "country": "USA"},
     {"name": "Kendall Jenner", "follower_count": "170", "description": "Model", "country": "USA"},
     {"name": "Shakira", "follower_count": "160", "description": "Musician", "country": "Colombia"},
-    {"name": "Virat Kohli", "follower_count": "150", "description": "Cricketer", "country": "India"}
-]
+    {"name": "Virat Kohli", "follower_count": "150", "description": "Cricketer", "country": "India"},
+    {"name": "Rihanna", "follower_count": "140", "description": "Musician", "country": "Barbados"},
+    {"name": "Lady Gaga", "follower_count": "130", "description": "Musician", "country": "USA"},
+    {"name": "Katy Perry", "follower_count": "120", "description": "Musician", "country": "USA"},
+    {"name": "Miley Cyrus", "follower_count": "110", "description": "Musician", "country": "USA"},
+    {"name": "Jennifer Lopez", "follower_count": "100", "description": "Musician", "country": "USA"},
+    {"name": "Brad Pitt", "follower_count": "90", "description": "Actor", "country": "USA"},
+    {"name": "Angelina Jolie", "follower_count": "80", "description": "Actress", "country": "USA"},
+    {"name": "Tom Hanks", "follower_count": "70", "description": "Actor", "country": "USA"},
+    {"name": "Julia Roberts", "follower_count": "60", "description": "Actress", "country": "USA"},
+    {"name": "Leonardo DiCaprio", "follower_count": "50", "description": "Actor", "country": "USA"},
+    {"name": "Megan Fox", "follower_count": "40", "description": "Actress", "country": "USA"},
+    {"name": "Zac Efron", "follower_count": "30", "description": "Actor", "country": "USA"},
+    {"name": "Vanessa Hudgens", "follower_count": "20", "description": "Actress", "country": "USA"},
+    {"name": "Ashley Tisdale", "follower_count": "10", "description": "Actress", "country": "USA"},
+    {"name": "Lindsay Lohan", "follower_count": "9", "description": "Actress", "country": "USA"},
+    {"name": "Paris Hilton", "follower_count": "8", "description": "Socialite", "country": "USA"},
+    {"name": "Britney Spears", "follower_count": "7", "description": "Musician", "country": "USA"}
+]   
 import random
 
 score = 0
