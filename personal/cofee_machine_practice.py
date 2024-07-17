@@ -44,6 +44,7 @@ def order_efficient(ingredients):
 
 def take_coins():
     """returns total coins inserted"""
+    # everytime your function returns something use docstrings
     print("please insert coins : ")
     total = 0
     quarters = int(input("How many quarters : "))
@@ -68,8 +69,8 @@ while order_again:
     else:
         drink = MENU[choice]
         if order_efficient(drink["ingredients"]):
-            money_recieved = take_coins()
-            print(money_recieved)
+            money_received = take_coins()
+            print(money_received)
             print(drink["cost"])
             if take_coins() >= drink["cost"]:
                 # for item in resources:
