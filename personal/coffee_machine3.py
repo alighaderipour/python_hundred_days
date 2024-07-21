@@ -36,7 +36,11 @@ serveAgain = True
 
 # methods:
 def resource_efficient(drink):
-    print(MENU[drink]["cost"])
+    for item, value in MENU[drink]["ingredients"].items():
+        if value <= resources.get(item, 0):
+            # the get() method returns value of a key of a dictionary, 0 if no value for key found
+            return True
+        return False
 
 
 while serveAgain:
