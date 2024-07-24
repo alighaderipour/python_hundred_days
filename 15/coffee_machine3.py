@@ -1,3 +1,5 @@
+# ? procedural programming
+# ? we set up procedures and functions to do things
 MENU = {
     "espresso": {
         "ingredients": {
