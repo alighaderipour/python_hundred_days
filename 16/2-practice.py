@@ -2,15 +2,13 @@ import turtle
 
 # Create a turtle named Timmy
 timmy = turtle.Turtle()
+print("timmy location inside memory ===> ", timmy)
 my_screen = turtle.Screen()
 # Set the shape of the turtle (default is classic arrow)
 timmy.shape("turtle")
 
 # Set the speed of the turtle
 timmy.speed(2)
-
-my_screen.getcanvas()
-my_screen.canvheight()
 
 
 # Define a function to draw a square
