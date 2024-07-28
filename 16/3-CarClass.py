@@ -1,5 +1,5 @@
 # ? an object
-# * what it has (attributes => variables ) and what it does (methods)
+# * what an object has? 1. (attributes => variables ) and 2. what it does (methods)
 # * an object is a real world thing that has something and do something
 # ? consider a class as a blueprint, from a class we can make as many object we want
 
