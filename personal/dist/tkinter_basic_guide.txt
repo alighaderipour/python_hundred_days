@@ -1,0 +1,27 @@
+To convert a Tkinter application into a standalone .exe file for Windows, you can use a tool like PyInstaller. PyInstaller bundles your Python application and all its dependencies into a single package, which can be distributed and run on any Windows system without requiring a separate Python installation.
+
+Here are the steps to create an .exe file from your Tkinter application using PyInstaller:
+
+Step 1: Install PyInstaller
+First, you need to install PyInstaller. You can do this using pip:
+
+bash
+Copy code
+
+pip install pyinstaller
+
+Step 2: Create Your Tkinter Application
+Ensure your Tkinter application code is saved in a file, for example, calculator.py.
+
+Step 3: Use PyInstaller to Create the .exe File
+Open a command prompt or terminal, navigate to the directory where your calculator.py file is located, and run the following command:
+
+bash
+Copy code
+
+pyinstaller --onefile --windowed calculator.py
+
+--onefile: This option tells PyInstaller to bundle everything into a single executable file.
+--windowed: This option tells PyInstaller to suppress the console window when running the GUI application.
+Step 4: Locate the .exe File
+After running the above command, PyInstaller will create several directories and files. The standalone .exe file will be located in the dist directory inside your project folder.
