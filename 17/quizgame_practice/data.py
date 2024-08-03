@@ -29,6 +29,3 @@ question_data = [
     },
     {"text": "A few ounces of chocolate can to kill a small dog.", "answer": "True"},
 ]
-
-
-print(len(question_data))
