@@ -20,7 +20,11 @@ cd my-repo
 git init
 git remote add -f origin https://github.com/ShahazLuffy/python_hundred_days.git
 
+//
+Discard local changes and pull:
 
+git reset --hard origin/master
+git pull origin master
 
 // pull all changes
 git pull origin master
