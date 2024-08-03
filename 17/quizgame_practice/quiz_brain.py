@@ -14,10 +14,10 @@ class QuizBrain:
             return False
 
     def next_question(self):
-        valid_answer = ["True", "False"]
+        valid_answer = ["True", "False", "true", "false"]
         x = self.questions_list[self.question_number]
         y = input(f"Q.{self.question_number+1} : {x.text} ? ")
-        if y in valid_answer:
+        if y.lower() in valid_answer:
             self.question_number += 1
             if self.track_score(y, x.answer):
                 print(f"correct answer ! your score is : {self.score}")
