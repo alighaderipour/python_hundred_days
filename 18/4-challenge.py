@@ -3,6 +3,8 @@ from turtle import Turtle, Screen
 
 tin = Turtle()
 tin.shape("arrow")
+tin.speed(0)
+
 screen = Screen()
 colors = [
     "#FFC67D",  # Coral
@@ -17,7 +19,7 @@ colors = [
     "#1ABC9C",  # Turquoise
 ]
 
-tin.speed(0)
+
 for i in range(3, 10):
     tin.color(random.choice(colors))
     for item in range(i):
