@@ -9,7 +9,7 @@ screen = Screen()
 
 screen.colormode(255)
 
-# tur.shape("arrow")
+# turtle.shape("arrow")
 tur.color("black")
 tur.pensize(15)
 # screen.setup(width=1700, height=950)
