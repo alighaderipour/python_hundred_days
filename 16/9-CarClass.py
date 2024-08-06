@@ -18,7 +18,7 @@ class Car:
         print(f"Driven {distance} miles. Total mileage is now {self.mileage} miles.")
 
     def repaint(self, new_color):
-        """Change the color of the car."""
+        """Change the dot_color of the car."""
         old_color = self.color
         self.color = new_color
         print(f"The car has been repainted from {old_color} to {new_color}.")

@@ -26,16 +26,22 @@ colors = rgb_colors
 screen_width = screen.window_width()
 screen_height = screen.window_height()
 
-# Starting positions
+# Starting positions and center of the screen is (0,0)
+# In order to go in bottom left side of the screen we negative the screen_width //2
+"""(Double Slash or Floor Division): This operator performs division and returns the largest integer that is less than or equal to the division 
+result."""
+
 start_x = -screen_width // 2 + 20
 start_y = -screen_height // 2 + 20
 
-# Function to draw a dot with a given color
-def draw_dot(x, y, color):
+
+# Function to draw a dot with a given dot_color
+def draw_dot(x, y, dot_color):
     turtle.penup()
     turtle.goto(x, y)
     turtle.pendown()
-    turtle.dot(20, color)
+    turtle.dot(20, dot_color)
+
 
 # Set the spacing between dots
 dot_spacing = 30
@@ -52,3 +58,6 @@ while x < screen_width // 2 - 20:
 
 # Close the screen on click
 screen.exitonclick()
+
+# First x is constant, and we go up by increasing y value
+# Then after we are close to  screen_height // 2 - 20 we go right by add x  with dot_spacing and again we go up
