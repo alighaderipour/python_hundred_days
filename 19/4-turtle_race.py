@@ -1,4 +1,5 @@
 from turtle import Turtle, Screen
+import random
 
 # Create the first turtle
 turtle1 = Turtle()
@@ -9,6 +10,7 @@ turtle1.color("red")
 turtle2 = Turtle()
 turtle2.shape("turtle")
 turtle2.color("green")
+
 
 finish_line = Turtle()
 finish_line.color("black")
@@ -35,13 +37,13 @@ turtle2.setposition(start_x, start_y2)  # Set position
 turtle2.pendown()  # Put the pen down if you want to draw later
 
 
-
-
 end_of_race = 0
-turtle1_x, turtle1_y = turtle1.pos()
-turtle2_x, turtle2_y = turtle2.pos()
-print(turtle1_x, turtle1_y)
-print(turtle2_x, turtle2_y)
+
+
+def turtle_pos(turtle):
+    turtle_x, turtle_y = turtle.pos()
+    return turtle_x, turtle_y
+
 
 finish_line.penup()
 finish_line.pendown()
@@ -50,9 +52,25 @@ finish_line.setposition(0, +135)
 finish_line.setheading(270)  # Point downwards
 finish_line.forward(270)  # Draw a vertical line
 
-turtle1.forward(100)
-turtle2.forward(70)
 
-
+while True:
+    turtle1_distance = random.randint(1, 20)
+    turtle2_distance = random.randint(1, 20)
+    if turtle_pos(turtle1)[0] < 0 and turtle_pos(turtle2)[0] < 0:
+        turtle1.forward(turtle1_distance)
+        turtle2.forward(turtle2_distance)
+    elif turtle_pos(turtle1)[0] >= 0 or turtle_pos(turtle2)[0] >= 0:
+        if turtle_pos(turtle1)[0] >= 0 and turtle_pos(turtle2)[0] >= 0:
+            print("both turtle wins")
+            break
+        elif turtle_pos(turtle1)[0] >= 0 and turtle_pos(turtle2)[0]:
+            print("turtle1 wins")
+            break
+        elif turtle_pos(turtle1)[0] < 0 and turtle_pos(turtle2)[0] >= 0:
+            print("turtle2 wins")
+            break
+        else:
+            print("error")
+            break
 # Keep the window open until clicked
 screen.exitonclick()
