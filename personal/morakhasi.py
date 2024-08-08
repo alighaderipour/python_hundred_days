@@ -40,7 +40,7 @@ class SimpleCalculator:
         tk.Button(master, text="محاسبه", command=self.calculate).grid(
             row=6, column=1, pady=10
         )
-
+        master.bind("<Return>", lambda event: self.calculate())
         # Creating the Clear button
         tk.Button(master, text="پاك كردن", command=self.clear).grid(
             row=6, column=3, pady=10
