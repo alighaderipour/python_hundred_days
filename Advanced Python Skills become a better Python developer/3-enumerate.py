@@ -21,3 +21,9 @@ for item in enumerated_players:
 files = ["Videos", "Pictures", "Documents"]
 for index, item in enumerate(files, start=1):
     print(f"file{index}: {item}.jpg")
+
+
+items = (("apple", 3), ("banana", 2), ("orange", 5))
+
+for index, (fruit, quantity) in enumerate(items):
+    print(f"{index} - we have {quantity} {fruit}s")
