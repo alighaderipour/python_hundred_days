@@ -1,30 +1,55 @@
-fruits = ["apple", "banana", "cherry"]
-colors = ["red", "yellow", "pink"]
+# ----------------------------- Definition -----------------------------
+"""
+1- Takes iterables (lists, dictionaries, tuples, sets, strings ) abd "zip" them into "tuples
+2- Is used for parallel iteration
+3- Returns a Zip Object, which is an iterator of tuples
+"""
 
-# Using zip to combine the two lists
-zipped = zip(fruits, colors)
-print(type(zipped))
-# Converting the zip object to a list to display the pairs
-result = list(zipped)
-print(result)  # Output: [('apple', 'red'), ('banana', 'yellow'), ('cherry', 'pink')]
+# ---------------------------------- LIST ----------------------------------
 
+countries = ["Iran", "Spain", "Italy", "France", "Portugal", "England"]
+clubs = ["Perspolis", "Real Madrid", "Inter", "P.S.G", "Porto", "Arsenal"]
+players = ["Ali Parvin", "Zidane", "Zanetti", "Navas", "Pepe"]
+zipped = zip(countries, clubs, players)
+print(zipped)  # England is not going to get zipped
 
-names = ["Alice", "Bob", "Charlie"]
-ages = [25, 30, 35]
-countries = ["USA", "UK", "Canada"]
+# print(zipped.__next__())
 
-# Zipping three lists together
-zipped2 = zip(names, ages, countries)
+for country, club, player in zipped:
+    print(country, club, player)
 
-# Converting to a list
-result2 = list(zipped2)
-print(result2)
-# Output: [('Alice', 25, 'USA'), ('Bob', 30, 'UK'), ('Charlie', 35, 'Canada')]
+# ---------------------------------- DICTIONARIES ----------------------------------
+products = {"apple": 0.5, "pineapple": 0.7}
+tech = {"iPhone": 1000, "windows": 600}
+products_tech = zip(products, tech)
+for item in products_tech:
+    print(item)
+products_tech_values = zip(products.values(), tech.values())
+for item in products_tech_values:
+    print(item)
 
+# ---------------------------------- Tuples ----------------------------------
+countries_tuple = ("Iran", "Spain", "Italy", "France", "Portugal", "England")
+clubs_tuple = ("Perspolis", "Real Madrid", "Inter", "P.S.G", "Porto", "Arsenal")
+players_tuple = ("Ali Parvin", "Zidane", "Zanetti", "Navas", "Pepe")
+zipped_tuple = zip(countries_tuple, clubs_tuple, players_tuple)
+for item in zipped_tuple:
+    print(item)
 
-names = ["Alice", "Bob", "Charlie"]
-ages = [25, 30, 35]
+# ---------------------------------- Strings ----------------------------------
+name = "ali"
+family = "ghaderi pour"
+zipped_string = zip(name, family)
+for item in zipped_string:
+    print(item)
 
-# Using zip with enumerate to get index and values
-for index, (name, age) in enumerate(zip(names, ages)):
-    print(f"{index}: {name} is {age} years old.")
+## ---------------------------------- zip_lonest ----------------------------------
+
+from itertools import zip_longest
+
+name_longest = "ali"
+family_longest = "ghaderi pour"
+zipped_string_longest = zip_longest(name, family)
+zipped_string_longest_fill_value = zip_longest(name, family, fillvalue="test")
+for item in zipped_string_longest_fill_value:
+    print(item)
