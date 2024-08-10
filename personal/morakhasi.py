@@ -14,9 +14,10 @@ class SimpleCalculator:
         self.eight = StringVar()
 
         # Creating Entry widgets
-        tk.Entry(master, textvariable=self.days, width=22).grid(
-            row=0, column=1, padx=10, pady=10
-        )
+        days_entry = tk.Entry(master, textvariable=self.days, width=22)
+        days_entry.grid(row=0, column=1, padx=10, pady=10)
+        days_entry.focus_set()  # Set focus to the 'days' entry field
+
         tk.Entry(master, textvariable=self.six, width=22, state="readonly").grid(
             row=1, column=1, padx=10, pady=10
         )
@@ -30,8 +31,8 @@ class SimpleCalculator:
         # Creating labels
         tk.Label(master, text="تعداد روز :").grid(row=0, column=0, padx=10, pady=10)
         tk.Label(master, text="موظفي 6:45 :").grid(row=1, column=0, padx=10, pady=10)
-        tk.Label(master, text="موظفي 7:10 :").grid(row=2, column=0, padx=10, pady=10)
-        tk.Label(master, text="موظفي 8:20 :").grid(row=3, column=0, padx=10, pady=10)
+        tk.Label(master, text="موظفي 7:20 :").grid(row=2, column=0, padx=10, pady=10)
+        tk.Label(master, text="موظفي 8:10 :").grid(row=3, column=0, padx=10, pady=10)
         tk.Label(master, text="تهيه شده توسط علي قادري پور").grid(
             row=7, column=0, padx=0, pady=0
         )
@@ -54,15 +55,15 @@ class SimpleCalculator:
             # Calculating the result
             six_min = (days_input * 60 * 6) + (days_input * 45)
             six_hour = int(six_min / 60)
-            six_val = f"{six_hour} : {six_min - (six_hour * 60)} "
+            six_val = f"{six_hour}:{six_min - (six_hour * 60)} "
 
             seven_min = (days_input * 60 * 7) + (days_input * 20)
             seven_hour = int(seven_min / 60)
-            seven_val = f"{seven_hour} : {seven_min - (seven_hour * 60)} "
+            seven_val = f"{seven_hour}:{seven_min - (seven_hour * 60)} "
 
             eight_min = (days_input * 60 * 8) + (days_input * 10)
             eight_hour = int(eight_min / 60)
-            eight_val = f"{eight_hour} : {eight_min - (eight_hour * 60)} "
+            eight_val = f"{eight_hour}:{eight_min - (eight_hour * 60)} "
 
             # Setting the result to the result field
             self.six.set(six_val)
