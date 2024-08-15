@@ -1,0 +1,3 @@
+opentdb.com
+go to api
+create json file
