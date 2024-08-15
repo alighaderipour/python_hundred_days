@@ -27,10 +27,18 @@ class Rectangle:
     def __init__(self, lower_left, upper_right):
         self.lower_left = lower_left
         self.upper_right = upper_right
+        print(
+            f" rectangle coordination: ({lower_left.x},{lower_left.y}) , ({upper_right.x}{upper_right.y})"
+        )
 
 
 rectangle1 = Rectangle(
     Point(random.randint(0, 9), random.randint(0, 9)),
     Point(random.randint(0, 9), random.randint(0, 9)),
 )
-print(rectangle1)
+
+guessed_x = int(input("guess x   : "))
+guessed_y = int(input("guess y   : "))
+point_guessd = Point(guessed_x, guessed_y)
+
+print(point_guessd.falls_in_rectangle)
