@@ -20,6 +20,12 @@ class Point:
         )
 
 
+class Rectangle:
+    def __init__(self, lower_left, upper_right):
+        self.lower_left = lower_left
+        self.upper_right = upper_right
+
+
 point1 = Point(2, 3)
 print(point1)
 print(point1.x, point1.y)
@@ -28,3 +34,5 @@ print(point1.falls_in_rectangle((2, -3), (-5, 5)))
 
 point2 = Point(3, 4)
 print(point1.distance_to(point2))
+
+rectangle1 = Rectangle(Point(2, 0), Point(4, 2))
