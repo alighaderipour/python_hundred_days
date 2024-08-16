@@ -6,10 +6,5 @@
   </component>
   <component name="TemplatesService">
     <option name="TEMPLATE_CONFIGURATION" value="Django" />
-    <option name="TEMPLATE_FOLDERS">
-      <list>
-        <option value="$MODULE_DIR$/Udemy_Intermediate_to_Advanced_Python_with_10_OOP_Projects/files-master/App-5-Flatmates-Bill-Web-App/templates" />
-      </list>
-    </option>
   </component>
 </module>
