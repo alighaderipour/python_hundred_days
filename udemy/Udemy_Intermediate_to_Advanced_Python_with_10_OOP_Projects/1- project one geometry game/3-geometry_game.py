@@ -6,6 +6,11 @@
 
 """
 
+import ipaddress
+import turtle
+
+from classppoint import PPoint
+
 
 class Point:
     def __init__(self, x, y):
@@ -20,18 +25,14 @@ pint4 = Point(13, 23)
 print(type(pint1))  # <class '__main__.Point'> this main means that
 # __main__. means current file the main file
 
-from classppoint import PPoint
 
 point5 = PPoint(100, 200)
 print(type(point5))  # <class 'classppoint.PPoint'>
 # if you import from another file the __.main__ will change to the name of the file you are importing from
 
 
-import turtle
-
 print(turtle.__file__)
 
-import ipaddress
 
 myip = ipaddress.IPv4Address("1.1.1.1")
 print(ipaddress.__file__)
