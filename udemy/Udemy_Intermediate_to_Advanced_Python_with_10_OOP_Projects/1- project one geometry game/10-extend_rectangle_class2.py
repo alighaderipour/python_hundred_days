@@ -55,6 +55,7 @@ class GuiRectangle(Rectangle):
             my_turtle.left(90)
             my_turtle.forward(abs(self.lower_left.y - self.upper_right.y))
             my_turtle.left(90)
+        screen.exitonclick()
 
 
 rectangle1 = Rectangle(
