@@ -2,7 +2,8 @@ from faker import Faker
 
 faker = Faker()
 
-int_num = [faker.pyint(-10, 10) for _ in range(3333)]
+# int_num = [faker.pyint(-10, 10) for _ in range(10)]
+int_num = [8, -1, 9, -5, 1, 0, 6, -7, 1, 5]
 print(int_num)
 
 max_list = []
