@@ -1,6 +1,2 @@
-from faker import Faker
-
-fakerz = Faker()
-
-numbs = [fakerz.pyint(1, 100) for i in range(10)]
-print(numbs)
+z = [lambda x: x + 1 for x in range(10)]
+print(z[0](3))
