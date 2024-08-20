@@ -4,9 +4,15 @@ iterator) of the results.
 map(function, iterable, ...)
 2- Returns a map object which is interior.
 3- Use it instead of loops whenever you can.
+
 """
 
 import math
+
+numbero = [2, 34, 234, 12, 32, 34, 3546, 4568, 6513, 56, 3568, 76, 90, 562, 345, 2345]
+result = list(map(lambda x: "a" if x > 30 else "b", numbero))
+print(result)
+
 
 numbers = [23, 345, 64, 2, 534, 64, 5, 756456, 2345, 234]
 
