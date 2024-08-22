@@ -17,3 +17,9 @@ itertools.accumulate(iterable, func=None)
 iterable: The input iterable (e.g., a list).
 func: A binary function that takes two arguments. If omitted, the default function used is addition (operator.add).
 """
+
+from itertools import accumulate
+
+listo = [24, 3, 1, 4, 5, 457, 58, 5]
+print(list(accumulate(listo)))
+print(sum(listo))
