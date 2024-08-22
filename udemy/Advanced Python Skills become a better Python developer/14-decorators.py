@@ -24,3 +24,36 @@ result = add(2, 3)
 # add called with arguments: (2, 3) {}
 # add returned: 5
 print(result)  # 5
+
+
+print(
+    "/////////////////////////////////////////////////////////////////////////////////////////////////"
+)
+import time
+
+
+def timing_decorator(func):
+    def wrapper(*args, **kwargs):
+        start_time = time.time()  # Start time
+        result = func(*args, **kwargs)  # Call the original function
+        end_time = time.time()  # End time
+        execution_time = end_time - start_time
+        print(f"Function '{func.__name__}' executed in {execution_time:.4f} seconds")
+        return result
+
+    return wrapper
+
+
+@timing_decorator
+def slow_function():
+    time.sleep(2)  # Simulating a slow function with a 2-second delay
+    print("Finished slow function")
+
+
+@timing_decorator
+def fast_function():
+    print("Finished fast function")
+
+
+slow_function()
+fast_function()
