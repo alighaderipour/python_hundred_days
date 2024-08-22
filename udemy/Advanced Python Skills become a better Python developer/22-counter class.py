@@ -13,3 +13,6 @@ nums = [random.randint(1, 100) for _ in range(100)]
 print(nums)
 c = Counter(nums)
 print(c)
+
+occurrence_12 = c.get(12)
+print(occurrence_12)
