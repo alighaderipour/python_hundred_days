@@ -11,11 +11,12 @@ pig_it('Hello world !')     # elloHay orldway !
 
 
 def pig_it(text):
-    text_listed = text.split(" ")
-    for i in range(len(text_listed)):
-        first_letter = text_listed[i][0]
-        text_listed[i] + first_letter
-    return text_listed
+    return " ".join(
+        [
+            word[1:] + word[0] + "ay" if word[0].lower() not in "?!" else word
+            for word in text.split()
+        ]
+    )
 
 
-print(pig_it("Pig latin is cool"))
+print(pig_it("hello there ahgu ?"))
