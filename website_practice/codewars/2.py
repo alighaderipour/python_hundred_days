@@ -13,4 +13,4 @@ def solution(text, ending):
     return text[-len(ending) :] == ending
 
 
-solution("abc", "bc")
+print(solution("abc", "bd"))
