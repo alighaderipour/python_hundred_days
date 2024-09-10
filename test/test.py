@@ -1,11 +1,3 @@
-"""
-if win 3 point
-if draw 1 point
-loss 0 point
-
-"""
-
-
 def points(games):
     score = 0
     for item in range(len(games)):
@@ -22,13 +14,17 @@ def points2(games):
     return sum((x >= y) + 2 * (x > y) for x, y in (item.split(":") for item in games))
 
 
+def duplicate_encode(word):
+    return "".join(["(" if word.lower().count(c) == 1 else ")" for c in word.lower()])
+
+
 print(points(["1:0", "2:0", "3:0", "4:0", "2:1", "1:3", "1:4", "2:3", "2:4", "3:4"]))
 print(points2(["1:0", "2:0", "3:0", "4:0", "2:1", "1:3", "1:4", "2:3", "2:4", "3:4"]))
 
 
-"""
-points = (x >= y) + 2 * (x > y)
-if win 1 + 2*1 = 3
-if draw 1 + 2*0 = 1
-if loss 0 + 2*0 = 0
-"""
+def x(games):
+    for item in games:
+        print(item.split(":"))
+
+
+x(["1:0", "2:0", "3:0", "4:0", "2:1", "1:3", "1:4", "2:3", "2:4", "3:4"])
