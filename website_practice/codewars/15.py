@@ -11,8 +11,8 @@ array_diff([1,2,2,2,3],[2]) == [1,3]
 """
 
 
-<<<<<<< HEAD
-"""
+
+
 
 
 def number(bus_stops):
@@ -42,4 +42,4 @@ def array_diff(a, b):
 
 def array_diff(a, b):
     return [x for x in a if x not in b]
->>>>>>> 910f4884b2b29cb87adf9bbdea418055300e3639
+
