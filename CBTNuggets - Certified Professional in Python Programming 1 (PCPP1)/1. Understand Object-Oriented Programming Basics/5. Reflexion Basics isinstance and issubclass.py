@@ -22,9 +22,8 @@ person1.greet("zari")
 
 
 def print_person_details(person):
-    if isinstance(
-        person, Person
-    ):  # check whether an object is instance of a specific class or not
+    # check whether an object is i  nstance of a specific class or not
+    if isinstance(person, Person):
         print(f"{person.name}")
     else:
         print("not instance of Person")
@@ -33,4 +32,4 @@ def print_person_details(person):
 print_person_details(person1)
 print_person_details(1)
 
-print(issubclass(Developer, Person))
+print(f"is Developer a subclass of Person? ", issubclass(Developer, Person))
