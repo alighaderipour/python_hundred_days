@@ -16,7 +16,7 @@ class Test2:
         self.person = name + family
 
     def __str__(self):
-        return f"{self.person} is the best"
+        return f"{self.person} is the worst"
 
 
 a1 = Test1("Karim", "Bagheri")

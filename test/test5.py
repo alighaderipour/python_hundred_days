@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -58,3 +59,5 @@ ax.set_title("Intersection of Planes Representing the System of Equations")
 
 # نمایش
 plt.show()
+=======
+>>>>>>> 30f7393e1a15444bc71cdfe7156bb74e9a57fea5
