@@ -32,5 +32,56 @@ dict1 = main(5)
 removed_item = dict1.popitem()
 print(dict1)
 print(removed_item)
-
+print(
+    "~*~*~*~*~*~*~*~~*~*~*~*~*~*~*~~*~Advanced Topics ~*~*~*~*~*~*~*~~*~*~*~*~*~*~*~~*~"
+)
 print("--------------------dictionary comprehension---------------------------")
+# 1. Dictionary Comprehensions
+# Dictionary comprehensions provide a concise way to create dictionaries.
+dict_comp = {x: x**3 for x in [1, 2, 3, 4, 5]}
+print(dict_comp)
+
+# Swapping Keys and Values
+original_dict = {"a": 1, "b": 2, "c": 3}
+reversed_dict = {value: key for key, value in original_dict.items()}
+print(reversed_dict)  # Output: {1: 'a', 2: 'b', 3: 'c'}
+# Creating Dictionaries from Two Lists
+keys = ["name", "age", "city"]
+values = ["Alice", 25, "New York"]
+combined_dict = {keys[i]: values[i] for i in range(len(keys))}
+print(combined_dict)  # Output: {'name': 'Alice', 'age': 25, 'city': 'New York'}
+
+# counting occurance
+words = ["apple", "banana", "apple", "orange", "banana", "apple"]
+word_count = {word: words.count(word) for word in set(words)}
+print(word_count)  # Output: {'apple': 3, 'banana': 2, 'orange': 1}
+
+# conditional assignment
+numbers = range(6)
+parity_dict = {num: ("even" if num % 2 == 0 else "odd") for num in numbers}
+print(
+    parity_dict
+)  # Output: {0: 'even', 1: 'odd', 2: 'even', 3: 'odd', 4: 'even', 5: 'odd'}
+
+# filtering dict by values
+original_dict = {"a": 5, "b": 15, "c": 10, "d": 20}
+filtered_dict = {k: v for k, v in original_dict.items() if v > 10}
+print(filtered_dict)  # Output: {'b': 15, 'd': 20}
+
+print("--------------------Nested Dictionaries---------------------------")
+# 2. Nested Dictionaries
+# Dictionaries can hold other dictionaries as values.
+
+
+nested_dict = {
+    "person1": {"name": "Alice", "age": 25},
+    "person2": {"name": "Bob", "age": 30},
+}
+
+# Accessing nested values
+print(nested_dict["person1"]["name"])  # Output: Alice
+print(
+    "--------------------Handling Missing Keys with collections.defaultdict ---------------------------"
+)
+# 3. Handling Missing Keys with collections.defaultdict
+# The defaultdict from the collections module provides a default value for missing keys.
