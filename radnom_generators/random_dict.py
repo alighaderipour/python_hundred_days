@@ -40,11 +40,11 @@ def create_name_value_dict(names, integers):
 
 
 # Main function to generate and return the data
-def main(size):
+def gen_dict(size):
     names, integers = generate_random_data(size)
     result = create_name_value_dict(names, integers)
     return result
 
 
 # Example usage: Change the size parameter to the desired size
-print(main(7))  # Generates a dictionary with 7 key-value pairs
+print(gen_dict(7))  # Generates a dictionary with 7 key-value pairs

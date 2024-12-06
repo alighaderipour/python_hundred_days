@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CsvFileAttributes">
+    <option name="attributeMap">
+      <map>
+        <entry key="\Amazing-Python-Scripts-main\Chronic Kidney Diseases Prediction\kidney_disease.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Amazing-Python-Scripts-main\Color_detection\colors.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Amazing-Python-Scripts-main\Concrete Compressive Strength+EDA\dataset\Concrete Compressive Strength.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Amazing-Python-Scripts-main\Customer Segmentation\Mall_Customers.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Amazing-Python-Scripts-main\EDA_IndianStartups\dataset\startup_funding.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Amazing-Python-Scripts-main\Flipkart_webscraping\filpkart-Scraping-under-50k.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Amazing-Python-Scripts-main\Gender Recognition Using Voice\dataset.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Amazing-Python-Scripts-main\Gold Price Prediction\gld_price_data.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Amazing-Python-Scripts-main\Guess the Countries\country_names.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Amazing-Python-Scripts-main\India-state-guessing-game\states.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Amazing-Python-Scripts-main\Internshala-Scraper\Internshala.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Amazing-Python-Scripts-main\Internshala-Scraper\Internshala2.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Amazing-Python-Scripts-main\K-Means-Clustering\Salary Dataset\Salary.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Amazing-Python-Scripts-main\Language Detection\language_detection.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Amazing-Python-Scripts-main\Living Cost EDA\dataset\cost-of-living.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Amazing-Python-Scripts-main\Message-Spam\spam.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Amazing-Python-Scripts-main\Message_Spam_Detection\Cleaned_Dataset.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Amazing-Python-Scripts-main\Message_Spam_Detection\dataset.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Amazing-Python-Scripts-main\Netflix UserBase EDA\dataset\Netflix Userbase.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Amazing-Python-Scripts-main\PDF-To-CSV-Converter\sample1.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Amazing-Python-Scripts-main\Parkinson's disease\data.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Amazing-Python-Scripts-main\Power Plant Energy Output Prediction Neural Network\dataset\df.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Amazing-Python-Scripts-main\Predicting Insurance Charges (Linear Regression)\dataset\insurance.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Amazing-Python-Scripts-main\Restaurant_Revenue_Prediction\train.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Amazing-Python-Scripts-main\Select Stocks by volume Increase\companylist.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Amazing-Python-Scripts-main\Self-Organizing-Map\dataset\Credit_Card_Applications.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Amazing-Python-Scripts-main\Titanic Survival Prediction\dataset\titanic3.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Amazing-Python-Scripts-main\movie recommender systems\dataset\movie_metadata.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
