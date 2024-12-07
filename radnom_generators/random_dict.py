@@ -47,4 +47,4 @@ def gen_dict(size):
 
 
 # Example usage: Change the size parameter to the desired size
-print(gen_dict(7))  # Generates a dictionary with 7 key-value pairs
+# print(gen_dict(7))  # Generates a dictionary with 7 key-value pairs
