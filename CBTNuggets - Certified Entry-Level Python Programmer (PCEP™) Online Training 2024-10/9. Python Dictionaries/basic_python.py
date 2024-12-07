@@ -5,7 +5,8 @@ print("-------------------get  dictionary value --------------------------")
 Toyota_val = car_stock["Toyota"]
 Nissan_val = car_stock.get("Nissan")
 print("Toyota Inventory : ", Toyota_val, "Toyota Inventory", Nissan_val)
-
+print("-------------------update  dictionary  --------------------------")
+# to update a key or add a new key/value pair
 car_stock.update({"Volvo": 25})
 print(car_stock)
 print("-------------------all key,values --------------------------")
@@ -25,7 +26,8 @@ print("------------------------pop-----------------------------")
 dict_names = {"Ali": 12, "Reza": 43, "Aria": 64, "Kourosh": 3, "Maryam": 26}
 dict_names.pop("Alia", print("the name you tried to pop was not found"))
 print("---------------------popitem-------------------------------")
-# The popitem() method in Python is used with dictionaries to remove and return the last key-value pair as a tuple. It follows LIFO (Last In, First Out) order for removal.
+# The popitem() method in Python is used with dictionaries to remove and return the last key-value pair as a tuple.
+# It follows LIFO (Last In, First Out) order for removal.
 from python_hundred_days.radnom_generators.random_dict import gen_dict
 
 dict1 = gen_dict(5)
@@ -125,31 +127,26 @@ sorted_by_keys = dict(sorted(my_dict.items()))
 sorted_by_values = dict(sorted(my_dict.items(), key=lambda item: item[1]))
 
 
-
-
-
+"""
 Performance Considerations
 Lookup time: Dictionaries have an average time complexity of
-𝑂
-(
-1
-)
+𝑂(1)
 O(1) for lookups, insertions, and deletions due to their hash table implementation.
 Memory usage: Dictionaries can consume more memory compared to other data structures like lists or tuples because of their underlying hash table.
 Use Cases of Dictionaries
 Counting Frequencies
 
-python
-Copy code
+"""
+
+
 from collections import Counter
 
 data = ["apple", "banana", "apple"]
 counts = Counter(data)
 print(counts)  # Output: Counter({'apple': 2, 'banana': 1})
-Grouping Data
 
-python
-Copy code
+
+# Grouping Data
 from collections import defaultdict
 
 data = [("cat", 1), ("dog", 2), ("cat", 3)]
@@ -159,9 +156,6 @@ for key, value in data:
     grouped[key].append(value)
 
 print(grouped)  # Output: defaultdict(<class 'list'>, {'cat': [1, 3], 'dog': [2]})
-Creating Lookup Tables
-
-python
-Copy code
+# Creating Lookup Tables
 lookup = {"a": 1, "b": 2}
 print(lookup.get("a"))  # Output: 1
