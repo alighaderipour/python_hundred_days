@@ -199,6 +199,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\Pandas\Kaggle\cows_and_goats.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
       </map>
     </option>
   </component>
