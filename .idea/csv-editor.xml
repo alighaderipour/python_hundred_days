@@ -199,7 +199,49 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\Pandas\04 - Pandas Basics (DataFrame Basics I)\summer.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Pandas\08 Course-Materials-ALL\Appendix_Statistics\Video_Lectures_NBs\bud_vs_rev.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Pandas\08 Course-Materials-ALL\Course_Materials_Part1\Coding_Exercises\cars.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Pandas\08 Course-Materials-ALL\Course_Materials_Part1\Video_Lecture_NBs\summer.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Pandas\08 Course-Materials-ALL\Course_Materials_Part3\Explanatory_DataAnalysis_Challenge\winter.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\Pandas\Kaggle\cows_and_goats.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Pandas\Kaggle\wine reviews.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
