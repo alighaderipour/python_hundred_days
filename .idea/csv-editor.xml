@@ -206,6 +206,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\Pandas\05 - Excursus How to avoid and debug Coding Errors (incl. ChatGPT)\summer.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\Pandas\08 Course-Materials-ALL\Appendix_Statistics\Video_Lectures_NBs\bud_vs_rev.csv">
           <value>
             <Attribute>
