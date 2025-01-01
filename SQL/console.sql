@@ -1,1 +1,3 @@
-exec sp_help 'non_integer'
+select * from non_integer
+
+
