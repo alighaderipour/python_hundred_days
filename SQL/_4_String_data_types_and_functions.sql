@@ -61,3 +61,35 @@ SELECT
     END AS example3
 FROM
     sys.all_columns;
+
+
+------------------------------ fill table  ------------------------------
+--RAND() is a function that generates a random floating-point number between 0 and 1
+DECLARE @Counter INT = 1;
+
+-- List of real names
+DECLARE @Names TABLE (Name CHAR(50));
+
+INSERT INTO @Names (Name) VALUES
+    ('John'), ('Emily'), ('Michael'), ('Sarah'), ('David'),
+    ('Jessica'), ('James'), ('Linda'), ('Robert'), ('Maria'),
+    ('Paul'), ('Karen'), ('William'), ('Lisa'), ('Andrew'),
+    ('Nancy'), ('Mark'), ('Betty'), ('Charles'), ('Helen');
+
+-- Insert random names into the table with a random age between 20 and 70
+WHILE @Counter <= 100
+BEGIN
+    INSERT INTO _4_String_data_types_and_functions (row_number, name, age)
+    SELECT
+        @Counter,
+        Name,
+        CAST(20 + (RAND() * 50) AS DECIMAL(5, 2))  -- random age between 20 and 70
+    FROM
+        (SELECT TOP 1 Name FROM @Names ORDER BY NEWID()) AS RandomNames;
+
+    SET @Counter = @Counter + 1;
+END;
+
+
+select * from _4_String_data_types_and_functions
+
