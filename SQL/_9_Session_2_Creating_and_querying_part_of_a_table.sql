@@ -24,3 +24,23 @@ select * from _9_tblEmployee
 
 alter table _9_tblEmployee alter column Department nvarchar(30)
 exec sp_help '_9_tblEmployee'
+
+
+------------------------------------------------where like character------------------------------
+select * from tblEmployee where employeefirstname like 'w%'
+select * from tblEmployee where employeefirstname like '%w%'
+select * from tblEmployee where employeefirstname like '_w%'
+select * from tblEmployee where employeefirstname like '[r-w]%'
+select * from tblEmployee where employeefirstname like '[rst]%'
+select * from tblEmployee where employeefirstname like '[^rst]%'
+
+------------------------------------------------where like number/date------------------------------
+select * from tblEmployee where EmployeeNumber > 200
+select * from tblEmployee where not EmployeeNumber > 200
+select * from tblEmployee where EmployeeNumber ! = 200
+select * from tblEmployee where EmployeeNumber >= 200 and EmployeeNumber < 500
+select * from tblEmployee where not (EmployeeNumber >= 200 and EmployeeNumber < 500)
+select * from tblEmployee where not EmployeeNumber between 200 and 500
+select * from tblEmployee where not EmployeeNumber in (200, 208, 233)
+
+
