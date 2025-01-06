@@ -2522,5 +2522,37 @@ select * from _11_tblTransaction
 select year(DateOfBirth) as Year , max(EmployeeNumber) as MaxOfTheYear from _9_tblEmployee group by DateOfBirth
 
 --sum amount of each employee transaction
-select EmployeeNumber, sum(amount) from _11_tblTransaction groupb by EmployeeNumber
 
+-- in tblTransaction we want sum of amount of each employeenumber
+select EmployeeNumber, sum(amount) from _11_tblTransaction group by EmployeeNumber
+
+
+
+-- we want name and family of those whp have transaction
+--but there is a problem ,even tho we have 1046 user in tblEmployee we don't see it in joined table
+--because EmployeeNumber = 1046 had no transaction
+select _9_tblEmployee.EmployeeNumber , EmployeeFirstName, EmployeeLastName, sum(Amount) as total
+from _11_tblTransaction
+join _9_tblEmployee
+on _11_tblTransaction.EmployeeNumber = _9_tblEmployee.EmployeeNumber
+group by _9_tblEmployee.EmployeeNumber , EmployeeFirstName, EmployeeLastName
+
+--which use does not have any transaction
+select employeenumber frpom _9_tblEmployee where employeenumber not in (select employeenumber from _11_tblTransaction)
+
+-- we have inner join, left join, right join, cross join
+
+--if we use left join we see those who had no transaction
+
+select _9_tblEmployee.EmployeeNumber , EmployeeFirstName, EmployeeLastName, sum(Amount) as total
+from _11_tblTransaction
+left join _9_tblEmployee
+on _11_tblTransaction.EmployeeNumber = _9_tblEmployee.EmployeeNumber
+group by _9_tblEmployee.EmployeeNumber , EmployeeFirstName, EmployeeLastName
+
+-- if we use right join
+select _9_tblEmployee.EmployeeNumber , EmployeeFirstName, EmployeeLastName, sum(Amount) as total
+from _11_tblTransaction
+right join _9_tblEmployee
+on _11_tblTransaction.EmployeeNumber = _9_tblEmployee.EmployeeNumber
+group by _9_tblEmployee.EmployeeNumber , EmployeeFirstName, EmployeeLastName
