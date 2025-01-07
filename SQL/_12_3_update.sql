@@ -20,7 +20,9 @@ update _11_tblTransaction
 set EmployeeNumber = 194
 output inserted.* , deleted.*
 from _11_tblTransaction
-where EmployeeNumber  in (3,4,5,44)Q
+where EmployeeNumber  in (3,4,5,44)
 
 select * from _11_tblTransaction
 rollback transaction
+---------------
+
