@@ -1,0 +1,16 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="financial_data_warehouse"
+  DTS:DTSID="{09371E05-D683-4A54-9F04-A964FA45C894}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=DESKTOP-3QQD2KV;User ID=alighaderipour;Initial Catalog=financial_data_warehouse;Provider=MSOLEDBSQL.1;Application Name=SSIS-Package-{09371E05-D683-4A54-9F04-A964FA45C894}DESKTOP-3QQD2KV.financial_data_warehouse.alighaderipour;Auto Translate=False;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAW1e7ygrm3UiMvNDL7KXTtAAAAAACAAAAAAAQZgAAAAEAACAAAABymOaCZ2zX2Rq4rUMDAVyf/55ZEmx1Rg81sT+FlTx/XQAAAAAOgAAAAAIAACAAAAAVecMZiziqwWNCh9oxatk4mp4Sw/oTz5Vp/+o3Je8zx4AAAAAkhYcySIaAspFxl8gdXHzzGHpCX9B4QE8YBp/IRTEMPqGuERX8qt8s6cJobaGk0hZ1VkxIgPxAoLjGlKfZmMctJ/sE0zGCvq3j3YFClfc0dcJdoNcg2G/jt47cN5gvkQvvkslmiIgMgG6D1PwIpqXBEwT+v9hPZUI3D3gs3xg1WUAAAAAizaOJ6wsai4yJW2AnidKkEF0LUF+Ic1QaCTyiwcMTL8ScTnTqMAEl1SEPD0LP58vjtqRZZCH3Tx9SH4CXUnWB</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
